@@ -118,8 +118,6 @@ contract FlashLoan is ICallee, DydxFlashloanBase, DirectCall, Ownable {
         solo.operate(accountInfos, operations);
     }
 
-    function() external payable {}
-
     function letsdoit(
         address _LoanToken,
         uint256 _LoanAmount,

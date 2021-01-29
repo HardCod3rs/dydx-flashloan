@@ -9,6 +9,8 @@ import "./ISoloMargin.sol";
 contract DydxFlashloanBase {
     using SafeMath for uint256;
 
+    function() external payable {}
+
     // -- Internal Helper functions -- //
 
     function _getMarketIdFromTokenAddress(address _solo, address token)
